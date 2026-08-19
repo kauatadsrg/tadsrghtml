@@ -1,0 +1,179 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f7f3;
+    color: #4a4a4a;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #2f4858;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    color: #2f4858;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3 {
+    color: #2f4858;
+    text-align: center;
+    text-decoration: underline;
+}
+
+p {
+    color: #4a4a4a;
+}
+
+p::first-letter {
+    font-size: 200%;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #2f4858;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* segundo assunto do menu com cor diferente */
+nav ul li:nth-child(2) a {
+    color: #d1495b;
+    font-weight: bold;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+ul, ol {
+    color: #4a4a4a;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 8px;
+    text-align: left;
+    color: #4a4a4a;
+}
+
+thead th {
+    background-color: #2f4858;
+    color: white;
+}
+
+/* linha da tabela com a terceira cor */
+.linha-cor td {
+    color: #d1495b;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+iframe {
+    max-width: 100%;
+    display: block;
+    margin: 10px 0;
+}
+
+fieldset {
+    border: 1px solid #2f4858;
+    padding: 15px;
+}
+
+legend {
+    color: #2f4858;
+    font-weight: bold;
+}
+
+label {
+    color: #4a4a4a;
+}
+
+/* metade dos labels do formulário com a terceira cor */
+form label:nth-of-type(odd) {
+    color: #d1495b;
+}
+
+input, select, textarea {
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="submit"] {
+    background-color: #2f4858;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #2f4858;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    color: white;
+    font-size: 11px;
+}
+
+/* deixa a pagina responsiva em telas menores */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Lógica de Programação</h1>
+        <p>Lógica de programação é a forma como organizamos o nosso pensamento para resolver um problema, criando uma sequência de passos que o computador consegue seguir. Nesta página eu vou falar um pouco sobre alguns assuntos importantes desse tema.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#variaveis">Variáveis e Tipos de Dados</a></li>
+            <li><a href="#decisao">Estruturas de Decisão</a></li>
+            <li><a href="#repeticao">Estruturas de Repetição</a></li>
+            <li><a href="#algoritmos">Algoritmos e Fluxogramas</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2 id="variaveis">Variáveis e Tipos de Dados</h2>
+        <p>Variável é um espaço na memória do computador que guarda um valor que pode mudar durante o programa. Cada variável tem um nome e um tipo de dado. Os tipos de dados mais usados são:</p>
+        <ul>
+            <li>Inteiro (int)</li>
+            <li>Decimal (float)</li>
+            <li>Texto (string)</li>
+            <li>Verdadeiro ou falso (booleano)</li>
+        </ul>
+
+        <h2 id="decisao">Estruturas de Decisão</h2>
+        <p>As estruturas de decisão servem para o programa escolher um caminho dependendo de uma condição. A mais usada é o "se... senão". Alguns exemplos de estruturas de decisão:</p>
+        <ol>
+            <li>Se (if)</li>
+            <li>Se... senão (if... else)</li>
+            <li>Escolha múltipla (switch)</li>
+        </ol>
+
+        <h2>Tabela de Estruturas</h2>
+        <table>
+            <caption>Estruturas usadas na lógica de programação</caption>
+            <thead>
+                <tr>
+                    <th>Estrutura</th>
+                    <th>Tipo</th>
+                    <th>Quando usar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>if / else</td>
+                    <td>Decisão</td>
+                    <td>Quando precisa testar uma condição</td>
+                </tr>
+                <tr class="linha-cor">
+                    <td>switch</td>
+                    <td>Decisão</td>
+                    <td>Quando tem vários valores fixos pra testar</td>
+                </tr>
+                <tr>
+                    <td>for</td>
+                    <td>Repetição</td>
+                    <td>Quando já sabe quantas vezes vai repetir</td>
+                </tr>
+                <tr>
+                    <td>while</td>
+                    <td>Repetição</td>
+                    <td>Quando repete até uma condição parar de ser verdadeira</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Tabela feita por mim com base no conteúdo estudado</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2 id="repeticao">Estruturas de Repetição</h2>
+        <p>As estruturas de repetição (ou laços) servem para repetir um trecho de código várias vezes sem precisar escrever ele de novo. As duas mais comuns são o for e o while.</p>
+
+        <h2 id="algoritmos">Algoritmos e Fluxogramas</h2>
+        <p>Um algoritmo é uma sequência de passos para resolver um problema. Antes de programar, muita gente desenha um fluxograma pra organizar as ideias. Abaixo tem dois exemplos que eu fiz:</p>
+
+        <h3>Imagens dos fluxogramas</h3>
+        <img src="img/fluxograma-decisao.png" alt="Fluxograma de uma estrutura de decisão">
+        <br>
+        <a href="https://pt.wikipedia.org/wiki/Fluxograma" target="_blank">
+            <img src="img/fluxograma-repeticao.png" alt="Fluxograma de uma estrutura de repetição">
+        </a>
+        <p>(clique na segunda imagem se quiser aprender mais sobre fluxograma)</p>
+
+        <h3>Vídeo</h3>
+        <p>Coloquei um vídeo do YouTube que explica melhor o assunto:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Rsy0ecgWEao" title="Vídeo sobre lógica de programação" frameborder="0" allowfullscreen></iframe>
+
+        <h3>Formulário de Contato</h3>
+        <p>Se tiver alguma dúvida, pode preencher o formulário abaixo:</p>
+
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Seus dados</legend>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"><br><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone"><br><br>
+
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" id="nascimento" name="nascimento"><br><br>
+
+                <label for="nivel">Nível de conhecimento:</label>
+                <select id="nivel" name="nivel">
+                    <option value="iniciante">Iniciante</option>
+                    <option value="intermediario">Intermediário</option>
+                    <option value="avancado">Avançado</option>
+                </select><br><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="30"></textarea><br><br>
+
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Quero receber novidades por e-mail</label><br><br>
+
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>Página feita por Kauã, IFRS RG 2026 :).</p>
+    </footer>
+
+</body>
+</html>
